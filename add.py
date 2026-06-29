@@ -1,12 +1,11 @@
-a=5
-b=4.3
-c="Hello"
-d="World"
-print(a+b)
-#print(a+c)/(b+c), not supported
-print(c+" "+d)
+num1 = 5
+num2 = 4.3
+str1 = "Hello"
+str2 = "World"
+print(num1+num2)
+#print(num1+str1)/(num2+str1), not supported
+print(str1+" "+str2)
 
-e=float(input("Enter a number :"))
-f=float(input("Enter another number :"))
-print("Sum of the numbers is :",e+f)
-
+num3 = float(input("Enter a number :"))
+num4 = float(input("Enter another number :"))
+print("Sum of the numbers is :",num3+num4)
