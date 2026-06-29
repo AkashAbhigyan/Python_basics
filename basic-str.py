@@ -1,8 +1,8 @@
 # python_basics
 print("My first ever file on github")
-a="This is a string"
-print(a)
-print(type(a))
-b="You can add two strings"
-c="like this"
-print(b+""+c)#or print(b,c)
+str1 = "This is a string"
+print(str1)
+print(type(str1))
+str2 = "You can add two strings"
+str3 = "like this"
+print(str2+""+str3)#or like(str2,str3)
