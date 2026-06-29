@@ -13,4 +13,6 @@ elif operator == '/':
         print("Error: Division by zero is not allowed.")
     else:
         print(in1 / in2)
+else:
+    print("Error: Invalid operator. Please use +, -, *, or /.")
 
