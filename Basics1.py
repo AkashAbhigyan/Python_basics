@@ -5,4 +5,4 @@ print(a)
 print(type(a))
 b="You can add two strings"
 c="like this"
-print(b+c)
+print(b+""+c)#or print(b,c)
