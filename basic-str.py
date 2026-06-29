@@ -5,4 +5,4 @@ print(str1)
 print(type(str1))
 str2 = "You can add two strings"
 str3 = "like this"
-print(str2+""+str3)#or like(str2,str3)
+print(str2+" "+str3)#or like(str2,str3)
