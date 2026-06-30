@@ -1,3 +1,4 @@
+#V1
 in1 = float(input("Enter the first number: "))
 in2 = float(input("Enter the second number: "))
 operator = input("Enter the operator: ")
@@ -17,6 +18,7 @@ else:
     print("Error: Invalid operator. Please use +, -, *, or /.")
 
 
+#V2
 a=float(input("Enter the first number: "))
 b=float(input("Enter the second number: "))
 c=input("Enter the operator: ")
@@ -49,6 +51,7 @@ if c == '/':
     print(result)
 
 
+#V3
 def add(a, b):
     return a + b
 
