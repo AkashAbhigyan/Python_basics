@@ -8,4 +8,4 @@ I am a first-year B.Tech AI & ML student. This repository documents my journey o
 * I want to build a foundation in Python
 * I want to learn how to solve problems
 * I need to prepare for Data Structures and Algorithms
-* I hope to build projects that will help me get internships and other opportunities, in the future with Python.
+* I aim to build projects that strengthen my problem-solving skills and prepare me for future.
