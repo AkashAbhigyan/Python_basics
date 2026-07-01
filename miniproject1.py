@@ -48,10 +48,12 @@ def divide(a, b):
             return a / b
 result = divide(a, b)
 if c == '/':
-    print(result)'''
+    print(result)
 
 
 #V3
+print("===== Simple Calculator =====")
+
 def add(a, b):
     return a + b
 
@@ -83,3 +85,53 @@ else:
     result = "Error: Invalid operator. Please use +, -, *, or /."
 
 print("Result:", result)
+
+print("Thank you for using the calculator!")'''
+
+
+#V4
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero is not allowed."
+    return a / b
+
+    print("===== Simple Calculator =====")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Exit")
+
+    choice = input("Enter the operator (1, 2, 3, 4) or '5' to exit: ")
+
+    if choice == '5':
+        print("Exiting the calculator. Goodbye!")
+    
+    elif choice in ['1', '2', '3', '4']:
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+
+        if choice == '1':
+            result = add(num1, num2)
+        elif choice == '2':
+            result = subtract(num1, num2)
+        elif choice == '3':
+            result = multiply(num1, num2)
+        elif choice == '4':
+            result = divide(num1, num2)
+        print("Result:", result)
+
+    else:
+        print("Error: Invalid choice. Please select a valid operator (1, 2, 3, 4) or '5' to exit.")
+
+    continue_choice = input("Do you want to perform another calculation? (yes/no): ")
