@@ -1,4 +1,4 @@
-#V1
+'''#V1
 in1 = float(input("Enter the first number: "))
 in2 = float(input("Enter the second number: "))
 operator = input("Enter the operator: ")
@@ -48,7 +48,7 @@ def divide(a, b):
             return a / b
 result = divide(a, b)
 if c == '/':
-    print(result)
+    print(result)'''
 
 
 #V3
@@ -70,6 +70,7 @@ num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 operator = input("Enter the operator (+, -, *, /): ")
 
+
 if operator == "+":
     result = add(num1, num2)
 elif operator == "-":
@@ -82,4 +83,3 @@ else:
     result = "Error: Invalid operator. Please use +, -, *, or /."
 
 print("Result:", result)
-
