@@ -2,7 +2,7 @@
 
 Welcome to my Python learning repository.
 
-I am a first-year B.Tech AI & ML student. This repository documents my journey of learning Python from the fundamentals.
+I am an AI & ML student. This repository documents my journey of learning Python from the fundamentals.
 
 ## Goals
 * I want to build a foundation in Python
