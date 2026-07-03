@@ -14,3 +14,12 @@ marks.pop(1)#removes first element
 print(marks)
 print(len(marks))
 print(20 in marks)
+
+a = set('abracadabra')
+b = set('alacazam')
+print(a)
+print(b)
+print(a - b)  # letters in a but not in b
+print(a | b)  # letters in a or b or both
+print(a & b)  # letters in both a and b
+print(a ^ b)  # letters in a or b but not both
