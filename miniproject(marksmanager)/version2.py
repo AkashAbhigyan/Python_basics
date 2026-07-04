@@ -3,7 +3,7 @@ student = {}
 print("===== STUDENT RECORD MANAGER =====")
 
 while True:
-    print("\nChoose an option(1,2,3,4,5,6 or 7)")
+    print("\nChoose an option:")
     print("1. Add student record")
     print("2. View student record")
     print("3. Search student record")
