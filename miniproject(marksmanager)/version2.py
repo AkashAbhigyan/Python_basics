@@ -10,12 +10,13 @@ while True:
     print("4. Update marks")
     print("5. Average marks")
     print("6. Highest marks")
-    print("7. Delete student record")
-    print("8. Quit")
+    print("7. Lowest marks")
+    print("8. Delete student record")
+    print("9. Quit")
 
     choice = int(input("Enter your choice: "))
 
-    if choice == 8:
+    if choice == 9:
         print("Thank you for using the manager")
         break
 
@@ -71,6 +72,13 @@ while True:
             print(f"The highest marks is: {student[highest_student]} by {highest_student}")
 
     elif choice == 7:
+        if not student:
+            print("The student record is empty.")
+        else:
+            lowest_student = min(student, key=student.get)
+            print(f"The lowest marks is: {student[lowest_student]} by {lowest_student}")
+
+    elif choice == 8: 
         delete_name = input("Enter the student name to delete record: ")
         if delete_name in student:
             del student[delete_name]
