@@ -23,3 +23,11 @@ print(a - b)  # letters in a but not in b
 print(a | b)  # letters in a or b or both
 print(a & b)  # letters in both a and b
 print(a ^ b)  # letters in a or b but not both
+
+d=[1,2,3]
+e=d.copy()
+e.reverse()
+if(d==e):
+    print("It is a palendrome")
+else:
+    print("It is not a palendrome")
