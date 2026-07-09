@@ -13,7 +13,7 @@ class Owner:
         self.address = address
         self.phone = contact_number
 
-owner1 = Owner("Akash","Shivpuram","9102823628")
+owner1 = Owner("Akash","Shivpuram",9102823628)
 dog1 = Dog("Lucy","German Shepard",owner1)
 dog1.bark()
 print(dog1.name)
@@ -34,58 +34,88 @@ class Person:
     def greet(self):
         print(f"Hello I am {self.name} and I am {self.age} years old")
 
-person1 = Person("Akash","19")
+person1 = Person("Akash",19)
 print("Name:",person1.name)
 print("Age:",person1.age)
-person1.greet()        
+person1.greet()  
+print("")      
 
 class Student:
     def __init__(self,name,age,marks):
         self.name = name
         self.age = age
-        self.result = marks
+        self.marks = marks
     
     def details(self):
-        print(f"Student name:{self.name}\nStudent age:{self.age}\nStudent marks:{self.result}")
-    
-student1 = Student("Akash","19","98")
-student2 = Student("Astha","25","99")
-student3 = Student("Nutan","50","97")
+        print(f"Student name:{self.name}\nStudent age:{self.age}\nStudent marks:{self.marks}")
+    def result_status(self):
+        if self.marks >=27:
+            print(f"{self.name} has Passed")
+        else:
+            print(f"{self.name} has Failed")
+        
+
+student1 = Student("Akash",19,12)
+student2 = Student("Astha",25,99)
+student3 = Student("Nutan",50,97)
+
+
 student1.details()
+student1.result_status()
+print("")
 student2.details()
+student2.result_status()
+print("")
 student3.details()
+student3.result_status()
+print("")
 
 class Car:
     def __init__(self,brand,model,year):
         self.brand = brand
         self.model = model
-        self.age = year
+        self.year = year
 
     def details(self):
-        print(f"Brand:{self.brand}\nModel:{self.model}\nYear:{self.age}")
+        print(f"Brand:{self.brand}\nModel:{self.model}\nYear:{self.year}")
 
-car1 = Car("Audi","S11","2011")
-car2 = Car("Mercedez","A9","2009")
-car3 = Car("Ferrari","N19","1996")
+car1 = Car("Audi","S11",2011)
+car2 = Car("Mercedez","A9",2009)
+car3 = Car("Ferrari","N19",1996)
 
 car1.details()
+print("")
 car2.details()
+print("")
 car3.details()
+print("")
         
 class Book:
     def __init__(self,title,author,price):
-        self.name = title
+        self.title = title
         self.author = author
-        self.cost = price
+        self.price = price
 
     def details(self):
-        print(f"Title:{self.name}\nAuthor:{self.author}\nPrice:{self.cost}")
+        print(f"Title:{self.title}\nAuthor:{self.author}\nPrice:Rs.{self.price}")
 
-book1 = Book("The Alchemist","Paulo Coelho","Rs.300")
-book2 = Book("Ayomic Habits","James Clear","Rs.500")
-book3 = Book("The Monk Who Sold His Ferrari","Robin Sharma","Rs.350")
+    def discount(self):
+        if self.price >= 350:
+            print(f"{self.author} is on 10% discount")
+        else:
+            print(f"There is no discount on a {self.author}")
+
+
+book1 = Book("The Alchemist","Paulo Coelho",300)
+book2 = Book("Atomic Habits","James Clear",500)
+book3 = Book("The Monk Who Sold His Ferrari","Robin Sharma",350)
 
 book1.details()
+book1.discount()
+print("")
 book2.details()
+book2.discount()
+print("")
 book3.details()
+book3.discount()
         
