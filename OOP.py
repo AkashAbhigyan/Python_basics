@@ -39,3 +39,22 @@ print("Name:",person1.name)
 print("Age:",person1.age)
 person1.greet()        
 
+class Student:
+    def __init__(self,name,age,marks):
+        self.name = name
+        self.age = age
+        self.result = marks
+    
+    def details(self):
+        print(f"Student name:{self.name}\nStudent age:{self.age}\nStudent marks:{self.result}")
+    
+student1 = Student("Akash","19","98")
+student2 = Student("Astha","25","99")
+student3 = Student("Nutan","50","97")
+student1.details()
+student2.details()
+student3.details()
+
+
+
+        
