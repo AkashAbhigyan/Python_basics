@@ -132,16 +132,86 @@ book3.details()
 book3.discount()
 print("")
         
+'''from datetime import datetime
+
 class User:
     def __init__(self,name,email,password):
         self.name = name
-        self.email = email
+        self._email = email #_makes the data protected, __makes the data private
         self.password = password
 
     def say_high_to_user(self,user):
         print(f"{self.name} says high to {user.name}")
 
-user1 = User("Andy","and@gmail.com","yvdg2132") 
+    def clean_email(self):
+        return self._email.lower().strip()
+    
+    def get_email(self):
+        print(f"Email accessed at {datetime.now()} ")
+        return self._email
+
+    def set_email(self,new_email):
+        if "@gmail.com" in new_email:
+            self._email = new_email
+        else:
+            print("Invalid Email.")
+        
+user1 = User("Andy","and@gmail.com  ","yvdg2132")
 user2 = User("Margot","margo@gmail.com","32jefn2")
 
 user1.say_high_to_user(user2)
+print("")
+user1.email = "andy@gmail.com"
+print("\n",user1.email)
+print(user1.clean_email)
+print(user1.get_email())
+
+user1.set_email("andy@gmail.com")
+print(user1.get_email())
+
+user1.set_email("8213uhrbda")
+print(user1.get_email())
+
+class User:
+    def __init__(self,name,email,password):
+        self.name = name
+        self._email = email
+        self.password = password
+
+    @property
+    def email(self):
+        print("Email accessed")
+        return self._email
+    
+    @email.setter
+    def email(self,new_email):
+        if "@" in new_email:
+            self._email = new_email
+        else:
+            print("Invalid email.")
+    
+user3 = User("Akash","slsdj@gmail.com","1234kfnh")
+user3.email = "ancie3@.ac"
+print(user3.email)'''
+
+class Student:
+    def __init__(self,name,age,marks):
+        self.name = name
+        self.age = age
+        self.marks = marks
+    
+    def details(self):
+        print(f"Student name:{self.name}\nStudent age:{self.age}\nStudent marks:{self.marks}")
+    def result_status(self):
+        if self.marks >=27:
+            print(f"{self.name} has Passed")
+        else:
+            print(f"{self.name} has Failed")
+        
+
+student1 = Student("Akash",19,12)
+student1.age = 20
+student1.details()
+
+
+
