@@ -132,7 +132,7 @@ book3.details()
 book3.discount()
 print("")
         
-'''from datetime import datetime
+from datetime import datetime
 
 class User:
     def __init__(self,name,email,password):
@@ -192,7 +192,7 @@ class User:
     
 user3 = User("Akash","slsdj@gmail.com","1234kfnh")
 user3.email = "ancie3@.ac"
-print(user3.email)'''
+print(user3.email)
 
 class Student:
     def __init__(self,name,age,marks):
@@ -212,6 +212,44 @@ class Student:
 student1 = Student("Akash",19,12)
 student1.age = 20
 student1.details()
+print("")
 
+class BankAccount:
+    def __init__(self,account_holder,balance):
+        self.account_holder = account_holder
+        self.__balance = balance
 
+    def deposit_money(self, deposit_amount):
+        if deposit_amount > 0:
+            self.__balance += deposit_amount
+            print(f"Rs.{deposit_amount} deposited successfully.")
+        else:
+            print("Deposit amount must be greater than 0.")
 
+    def withdraw_money(self, withdraw_amount):
+        if withdraw_amount <= 0:
+            print("Withdrawal amount must be greater than 0.")
+        elif withdraw_amount > self.__balance:
+            print("Insufficient balance.\n")
+        else:
+            self.__balance -= withdraw_amount
+            print(f"Rs.{withdraw_amount} withdrawn successfully.")
+
+    def display_balance(self):
+        print(f"Current Balance: Rs.{self.__balance}")
+
+    @property
+    def balance(self):
+        return self.__balance
+
+account = BankAccount("Akash",2134)
+
+account.display_balance()
+print("")
+account.deposit_money(23)
+account.display_balance()
+print("")
+account.withdraw_money(32)
+account.display_balance()
+print("")
+print(f"Remaining balance: Rs.{account.balance}")
