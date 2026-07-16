@@ -26,7 +26,7 @@ user1 = User("Andy","and@gmail.com  ","yvdg2132")
 user2 = User("Margot","margo@gmail.com","32jefn2")
 
 user1.say_high_to_user(user2)
-print("")
+print()
 user1.email = "andy@gmail.com"
 print("\n",user1.email)
 print(user1.clean_email)
