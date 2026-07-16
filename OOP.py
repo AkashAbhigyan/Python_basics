@@ -270,7 +270,7 @@ class LibraryBook:
             print("Invalid quantity.")
 
     def return_book(self,return_quantity):
-            if return_quantity <= self.borrow_quantity and self.availablecopies <= self.totalcopies:
+            if return_quantity <= self.totalcopies and self.availablecopies <= self.totalcopies:
                 print(f"No. of books returned: {return_quantity}")
                 print("Books returned successfully.")
                 self.availablecopies += return_quantity   
@@ -296,3 +296,50 @@ print()
 book.return_book(56)
 print()
 book.display_copies()
+
+class Movie:
+    def __init__(self,title,director,rating):
+        self.title = title
+        self.director = director
+        if 0 <= rating <= 10:
+            self.rating = rating
+        else:
+            self.rating = 0
+            print("Invalid rating!\n")
+
+    def display_details(self):
+        print(f"Title: {self.title}")
+        print(f"Director: {self.director}")
+        print(f"Rating: {self.rating}\n")
+
+    def update_rating(self,new_rating):
+        if 0 <= new_rating <= 10:
+            self.rating = new_rating
+        else:
+            print("Invalid rating.")
+            
+movie1 = Movie("adfa","afdfrf",8)
+
+movie1.display_details()
+movie1.update_rating(9)
+movie1.display_details()
+
+class Student:
+    student_count = 0
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        Student.student_count += 1
+
+    def display_details(self):
+        print(f"Student's name: {self.name}")
+        print(f"Student's age: {self.age}")
+
+student1 = Student("Akash",19)
+student2 = Student("Astha",25)
+student1.display_details()
+print()
+student2.display_details()
+print()
+print(f"Number of students: {Student.student_count}")
+
