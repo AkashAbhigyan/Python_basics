@@ -1,4 +1,4 @@
-'''class Car:
+class Car:
     def __init__(self,brand,model,year):
         self.brand = brand
         self.model = model
@@ -68,7 +68,7 @@ for vehicle in Vehicles:
     if isinstance(vehicle,Bike):
         print(f"Type: {type(vehicle).__name__}\nBrand: {vehicle.brand}\nModel: {vehicle.model}\nYear: {vehicle.year}\nFuel type: {vehicle.fueltype}\nNumber of wheels: {vehicle.no_of_wheels}")
         vehicle.start()
-        vehicle.stop()'''
+        vehicle.stop()
 
 
 class Vehicle:
