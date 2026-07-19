@@ -26,7 +26,7 @@ while True:
         print()
 
         if choice == 3:
-            print("Thank you for using the calculator!")
+            print("Thank you for using the Area Calculator!")
             break
 
         elif choice == 1:
@@ -53,10 +53,10 @@ while True:
         continue
 
     continue_calculation = input(
-        "Do you want to perform another calculation? (y/n): ")
+        "Do you want to perform another area calculation? (y/n): ")
 
     if continue_calculation.lower() != "y":
-        print("Thank you for using the calculator!")
+        print("Thank you for using the area calculator!")
         break
 
 

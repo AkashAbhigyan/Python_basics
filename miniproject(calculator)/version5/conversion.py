@@ -22,7 +22,7 @@ while True:
         print()
 
         if choice == 3:
-            print("Thank you for using the calculator!")
+            print("Thank you for using the Converter!")
             break
 
         elif choice == 1:
@@ -48,10 +48,10 @@ while True:
         continue
 
     continue_calculation = input(
-        "Do you want to perform another calculation? (y/n): ")
+        "Do you want to perform another conversion? (y/n): ")
 
     if continue_calculation.lower() != "y":
-        print("Thank you for using the calculator!")
+        print("Thank you for using the converter!")
         break
 
 

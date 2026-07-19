@@ -30,7 +30,7 @@ while True:
     print()
 
     if choice == '5':
-        print("Thank you for using the calculator!")
+        print("Thank you for using the Arithmetic Calculator!")
         break
 
     elif choice in ['1', '2', '3', '4']:
@@ -54,7 +54,7 @@ while True:
     
     print()
 
-    continue_calculation = input("Do you want to perform another calculation? (y/n): ")
+    continue_calculation = input("Do you want to perform another arithmetic calculation? (y/n): ")
     if continue_calculation.lower() != 'y':
-        print("Thank you for using the calculator!")
+        print("Thank you for using the arithmetic calculator!")
         break
