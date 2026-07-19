@@ -56,9 +56,9 @@ class Manager(Employ):
     def display_details(self):
         print(f"Manager's department: {self.department}")
         return super().display_details()
-    
-        
-    
+      
 employ = Manager("Akash",32,"DOI")
 employ.display_details()
+
+
     
